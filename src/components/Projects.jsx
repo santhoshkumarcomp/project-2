@@ -17,7 +17,7 @@ const Projects = () => {
       technologies: ["React", "Node.js", "MongoDB", "Express"],
       category: "fullstack",
       github: "https://github.com/santhoshkumarcomp/bus-ticketing-backend",
-      live: "https://bus-ticketing-frontend-oilryxke9.vercel.app/",
+      live: "https://bus-ticketing-frontend.vercel.app",
     },
     {
       id: 2,
