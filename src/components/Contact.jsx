@@ -42,12 +42,12 @@ const Contact = () => {
       value: "santhoshkumarcomp@gmail.com",
       link: "mailto:santhoshkumarcomp@gmail.com",
     },
-    {
-      icon: <Phone size={24} />,
-      title: "Phone",
-      value: "+91 (636) 955-7279",
-      link: "tel:+916369557279",
-    },
+    // {
+    //   icon: <Phone size={24} />,
+    //   title: "Phone",
+    //   value: "+91 (636) 955-7279",
+    //   link: "tel:+916369557279",
+    // },
     {
       icon: <MapPin size={24} />,
       title: "Location",

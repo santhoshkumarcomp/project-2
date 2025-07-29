@@ -14,9 +14,10 @@ const Projects = () => {
       description:
         "Full-stack solution  that book your tickets in seconds with our streamlined booking process. No waiting, no hassle.",
       image: BusBook,
-      technologies: ["React", "Node.js", "MongoDB", "Express"],
+      technologies: ["MongoDB", "Express", "React", "Node.js"],
       category: "fullstack",
       github: "https://github.com/santhoshkumarcomp/bus-ticketing-backend",
+      github_fe: "https://github.com/santhoshkumarcomp/Bus-Ticketing-frontend",
       live: "https://bus-ticketing-frontend.vercel.app",
     },
     {
@@ -25,9 +26,10 @@ const Projects = () => {
       description:
         "It allows users to browse, bid on, and sell items in various categories and sellers to connect with them.",
       image: Auction,
-      technologies: ["React", "Node.js", "MongoDB", "Express"],
+      technologies: ["MongoDB", "Express", "React", "Node.js"],
       category: "fullstack",
       github: "https://github.com/santhoshkumarcomp/BE_CAPSTONE",
+      github_fe: "https://github.com/santhoshkumarcomp/frontEnd-auctionSite",
       live: "https://subtle-kleicha-aa8606.netlify.app/",
     },
     {
@@ -36,16 +38,17 @@ const Projects = () => {
       description:
         "Modern twitter clone application with beautiful UI, tweets and so on.",
       image: Twitter,
-      technologies: ["React", "CSS3"],
+      technologies: ["MongoDB", "Express", "React", "Node.js"],
       category: "fullstack",
       github: "https://github.com/santhoshkumarcomp/project",
+      github_fe: "https://github.com/santhoshkumarcomp/project",
       live: "https://lively-mermaid-39ac84.netlify.app",
     },
   ];
 
   const categories = [
     { id: "all", name: "All Projects" },
-    { id: "fullstack", name: "Full Stack" },
+    // { id: "fullstack", name: "Full Stack" },
   ];
 
   const filteredProjects =
@@ -85,41 +88,53 @@ const Projects = () => {
               className="project-card glass-card"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="project-image">
-                <img src={project.image} alt={project.title} />
-                <div className="project-overlay">
-                  <div className="project-links">
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="project-link"
-                    >
-                      <Github size={20} />
-                    </a>
-                    <a
-                      href={project.live}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="project-link"
-                    >
-                      <ExternalLink size={20} />
-                    </a>
+              <a
+                href={project.live}
+                target="_blank"
+                rel="noopener noreferrer"
+                className=""
+              >
+                <div className="project-image">
+                  <img src={project.image} alt={project.title} />
+                  <div className="project-overlay">
+                    <div className="project-links"></div>
                   </div>
                 </div>
-              </div>
+              </a>
 
               <div className="project-content">
-                <h3 className="project-title">{project.title}</h3>
-                <p className="project-description">{project.description}</p>
+                <h3 className="project-title">Title: {project.title}</h3>
+                <p className="project-description">
+                  Description: {project.description}
+                </p>
 
                 <div className="project-technologies">
+                  <span>Tech Stack used :</span>
                   {project.technologies.map((tech, techIndex) => (
                     <span key={techIndex} className="tech-tag">
                       {tech}
                     </span>
                   ))}
                 </div>
+                <span className="spanify">
+                  <a
+                    href={project.github_fe}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className=""
+                  >
+                    <span className="tech-tag_l"> Frontend link </span>
+                  </a>
+
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className=""
+                  >
+                    <span className="tech-tag_l"> Backend link </span>
+                  </a>
+                </span>
               </div>
             </div>
           ))}

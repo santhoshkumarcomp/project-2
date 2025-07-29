@@ -1,10 +1,14 @@
 .projects {
-  background: linear-gradient(135deg, var(--dark-secondary) 0%, var(--dark) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--dark-secondary) 0%,
+    var(--dark) 100%
+  );
   position: relative;
 }
 
 .projects::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -36,7 +40,12 @@
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
 }
-
+.spanify {
+  padding-top: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .filter-btn:hover {
   color: var(--primary);
   background: rgba(0, 210, 255, 0.1);
@@ -162,7 +171,15 @@
   font-weight: 500;
   border: 1px solid rgba(0, 210, 255, 0.2);
 }
-
+.tech-tag_l {
+  background: rgba(187, 0, 255, 0.1);
+  color: var(--primary);
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid rgba(0, 210, 255, 0.2);
+}
 .projects-cta {
   padding: 32px;
   background: var(--glass-bg);
@@ -189,20 +206,20 @@
     grid-template-columns: 1fr;
     gap: 24px;
   }
-  
+
   .project-filters {
     gap: 12px;
   }
-  
+
   .filter-btn {
     padding: 8px 16px;
     font-size: 0.85rem;
   }
-  
+
   .project-content {
     padding: 20px;
   }
-  
+
   .project-image {
     height: 180px;
   }
@@ -213,12 +230,12 @@
     flex-direction: column;
     align-items: center;
   }
-  
+
   .filter-btn {
     width: 200px;
     justify-content: center;
   }
-  
+
   .projects-cta {
     padding: 24px;
   }
