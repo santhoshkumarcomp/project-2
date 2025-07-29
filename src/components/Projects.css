@@ -41,10 +41,10 @@
   backdrop-filter: blur(10px);
 }
 .spanify {
-  padding-top: 3px;
+  padding-top: 6px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 .filter-btn:hover {
   color: var(--primary);
@@ -173,7 +173,16 @@
 }
 .tech-tag_l {
   background: rgba(187, 0, 255, 0.1);
-  color: var(--primary);
+  color: var(--text-secondary);
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid rgba(0, 210, 255, 0.2);
+}
+.tech-tag_l:hover {
+  background: rgba(157, 22, 206, 0.5);
+  color: var(--text-secondary);
   padding: 4px 12px;
   border-radius: 12px;
   font-size: 0.8rem;
